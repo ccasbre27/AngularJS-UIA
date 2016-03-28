@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Backend", "Backend\Backend.njsproj", "{3A98CBE1-0D34-41F6-8A97-6BE67868EACA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{E2A93F45-6497-4E2C-9F3D-223D044A217B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{9FD4FD04-EEC5-44A8-85B2-F64AC8FB8F0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3A98CBE1-0D34-41F6-8A97-6BE67868EACA} = {E2A93F45-6497-4E2C-9F3D-223D044A217B}
 	EndGlobalSection
 EndGlobal
