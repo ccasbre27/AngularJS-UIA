@@ -9,11 +9,6 @@ app.controller("MyCtrl", function($scope,$http) {
           $scope.array = [{name: "Error!! " + res.status}];
           alert("Error al llamar api " + res.status);
         });
-    
-    $scope.getItem = function (item)
-    {
-        alert(item.nombre);
-    }
-    
+       
     
 });

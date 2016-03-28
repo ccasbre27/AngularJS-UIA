@@ -1,0 +1,35 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../bootstrap.min.css" />
+
+        <script src="../bootstrap.min.js"></script>
+        <script src="../angular.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-app="MyApp" class="container">
+
+        <br />
+        
+        <div ng-controller="MyCtrl" >
+            
+            <div class="row">
+                <div ng-repeat="item in array" class="col-sm-6 col-md-4">
+                    
+
+                    
+                    <div class="thumbnail">
+                        <h3 style="text-align:center">{{item.nombre}}</h3>
+                        <img src="{{item.url_imagen}}" alt="{{item.name}}" ng-click="getItem(item)" width="100" height="100">                   
+                      
+                            {{item.descripcion}}
+                          
+                        <br />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
