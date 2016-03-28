@@ -1,0 +1,18 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="../angular.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-app="MyApp">
+        
+        <div ng-controller="MyCtrl">
+            <div ng-repeat="item in array" ">
+                <b>{{item.name}}</b>
+                <img src="{{item.url_imagen}}" alt="{{item.name}}" ng-click="getItem(item)"/>
+                <p> {{item.descripcion}} </p>
+            </div>    
+        </div>
+    </body>
+</html>
